@@ -1,0 +1,384 @@
+:root{
+  --black:#484747;
+  --green:#45a049;
+  --btn-hover:#3498db;
+  --red:#e74c3c;
+  --text-color:#f39c12;
+  --light-bg:#eee;
+  --dark-bg:#f2f2f2;
+  --box-shadow:0 5px 10px rgba(0, 0, 0, 0.2);
+}
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+.btn,
+.delete-btn,
+.option-btn{
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 18px;
+  color:white ;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+.btn{
+  background-color: var(--btn-hover);
+  margin-top: 10px;
+}
+.delete-btn{
+  background-color: var(--red);
+  margin-top: 10px;
+}
+.option-btn{
+  background-color: var(--text-color);
+  margin-top: 10px;
+}
+
+.btn:hover,
+.delete-btn:hover,
+.option-btn:hover{
+  background-color: var(--green);
+}
+
+.navbar {
+  background-color:var(--light-bg);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: var(--box-shadow);
+  /* position: sticky; */
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  margin-left: 65px;
+  height: 30px;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 15px;
+}
+
+.nav-links li a {
+  color:var(--btn-hover);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav-links li a:hover{
+  color:var(--text-color);
+}
+
+/* profile */
+.profile_icon img{
+width: 40px;
+width: 40px;
+border-radius: 50%;
+position: relative;
+top: 15px;
+}
+.profile-form{
+  background-color: var(--light-bg);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80vw;
+  margin: 20px auto;
+  box-shadow: var(--box-shadow);
+  /* display: block; */
+  position: absolute;
+  right: 20px; /* Adjust distance from the right side */
+  top: 70px; /* Adjust distance from the top */
+  color: var(--black);
+  z-index: 1000;
+}
+.info-sec{
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+
+}
+.info{
+  width: 40%;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  padding: 15px;
+  
+}
+.info input{
+  width:calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+
+}
+.order-cards{
+  width: calc(100% - 20px);
+}
+
+.order-cards table{
+  width: 100%;
+  text-align: center;
+  border: var(--black);
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  padding: 15px;
+  background-color: white;
+}
+.order-cards table thead{
+  background-color: var(--black);
+
+}
+.order-cards table thead th{
+  padding: 10px;
+  color: var(--light-bg);
+  font-size: 15px;
+}
+.order-cards table tbody .tbottom{
+  background-color: var(--light-bg);
+font-weight: bold;
+  
+}
+.order-cards table tbody tr td input[type="number"]
+{
+  margin-top: 5px;
+    width: 34px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+
+/* profile end */
+
+/* form section */
+.login-form,.register-form {
+  background-color: var(--light-bg);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin: 20px auto;
+  box-shadow: var(--box-shadow);
+  /* display: block; */
+  position: absolute;
+  right: 20px; /* Adjust distance from the right side */
+  top: 80px; /* Adjust distance from the top */
+  
+}
+
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input-group input,
+.input-group input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+button{
+  background-color: var(--btn-hover);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ .f_button {
+
+  width: 100%;
+  font-size: 16px;
+}
+
+ button:hover {
+  background-color: var(--green);
+}
+
+ .register-message {
+  text-align: center;
+  margin-top: 10px;
+  color: #555;
+}
+
+.register-message span {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+  
+}
+
+
+/* form section end */
+
+/* body section */
+.container {
+  max-width: 90vw;
+  margin:20px auto;
+  padding: 0 20px;
+}
+h2 {
+  text-align: center;
+}
+
+section {
+  padding: 20px 0;
+}
+.home_bannaer img{
+  width: 90vw;
+  height: 80vh;
+  margin-bottom: 10px;
+}
+
+/* product */
+.heading{
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.box-conteiner{
+  margin: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+.box-conteiner .card{
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  padding: 15px;
+  width: 270px;
+  position: relative;
+}
+
+.box-conteiner .card img{
+  height: 250px;
+}
+
+.box-conteiner .card .name{
+  font-size: 15px;
+  color:var(--black);
+  margin-bottom: 4px;
+  /* padding: 20px; */
+}
+
+.box-conteiner .card .price{
+  position: absolute;
+  border-radius: 5px;
+  background-color: var(--text-color);
+  color: var(--light-bg);
+  top:10px;
+}
+
+.diseble{
+  pointer-events: none;
+}
+/* about */
+.about-section {
+  padding: 40px 0;
+  text-align: center;
+}
+.about-heading {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+}
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #666;
+}
+.about-content p {
+  margin-bottom: 20px;
+}
+.about-image {
+  margin-top: 50px;
+}
+.about-image img {
+  width: 20vw;
+  max-width: 600px;
+  border-radius: 5px;
+}
+
+/* conyuc */
+
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+.contact-heading {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.contact-info {
+  margin-bottom: 30px;
+}
+.contact-info p {
+  margin: 5px 0;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.contact-form textarea {
+  height: 100px;
+}
+.contact-form input[type="submit"] {
+  transition: background-color 0.3s ease;
+}
+.contact-form input[type="submit"]:hover {
+  background-color: var(--text-color);
+}
+
+/* footer */
+.footer {
+  background-color: #333;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
